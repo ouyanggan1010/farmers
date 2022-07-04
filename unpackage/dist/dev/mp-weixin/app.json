@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newrural/newrural",
+    "pages/farmers/farmers",
+    "pages/my/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#00b96b",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#9B9B9B",
+    "selectedColor": "#0091FF",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index-active.png"
+      },
+      {
+        "text": "新农村",
+        "pagePath": "pages/newrural/newrural",
+        "iconPath": "static/tabs/newrural.png",
+        "selectedIconPath": "static/tabs/newrural-active.png"
+      },
+      {
+        "text": "农品汇",
+        "pagePath": "pages/farmers/farmers",
+        "iconPath": "static/tabs/farmers.png",
+        "selectedIconPath": "static/tabs/farmers-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabs/my.png",
+        "selectedIconPath": "static/tabs/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

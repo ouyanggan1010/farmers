@@ -1,0 +1,1 @@
+<view><tab-bar vue-id="39f8de00-1" selected="{{1}}" bind:__l="__l"></tab-bar></view>

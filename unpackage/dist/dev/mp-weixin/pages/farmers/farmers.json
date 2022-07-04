@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "农品汇",
+  "usingComponents": {
+    "tab-bar": "/components/tabBar/tabBar"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "新农村",
+  "usingComponents": {
+    "tab-bar": "/components/tabBar/tabBar"
+  }
+}
