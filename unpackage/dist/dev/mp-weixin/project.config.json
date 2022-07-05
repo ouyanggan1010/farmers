@@ -30,10 +30,11 @@
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.24.4",
+  "libVersion": "2.24.7",
   "appid": "wx6eba79bddf47f14e",
   "projectname": "demo",
   "condition": {

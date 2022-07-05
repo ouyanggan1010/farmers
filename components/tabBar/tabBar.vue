@@ -83,6 +83,7 @@ export default {
   align-items: center;
   box-sizing: border-box;
   border-top: 0.2564vw solid #f6f6f6;
+  z-index: 2;
 
   .tab-bar-item {
     text-align: center;
