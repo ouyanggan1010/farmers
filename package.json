@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "vue-jsonp": "^2.0.0"
+  }
+}
