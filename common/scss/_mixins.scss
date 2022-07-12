@@ -1,47 +1,51 @@
 @charset "utf-8";
 // opacity透明度
 @mixin opacity($opacity) {
-  opacity: $opacity;
-  filter: alpha(opacity=$opacity * 100);
+	opacity: $opacity;
+	filter: alpha(opacity=$opacity * 100);
 }
 
 // clearfix清除浮动，float
 @mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 
 //一行省略
 @mixin overell {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
+
 // 多行省略
 @mixin overmore($num) {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: $num;
-    overflow: hidden;
-  }
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $num;
+	/* autoprefixer: off */
+	-webkit-box-orient: vertical;
+	/* autoprefixer: on */
+}
 
 //icon
 
 /*图标*/
 @mixin icon($url) {
-  [class*="myicon-"] {
-    display: inline-block;
-    background: url($url) no-repeat 0 0;
-    // 两倍图780px的1/2=设计图的390px，保证清晰度
-    background-size: 100vw;
-  }
+	[class*='myicon-'] {
+		display: inline-block;
+		background: url($url) no-repeat 0 0;
+		// 两倍图780px的1/2=设计图的390px，保证清晰度
+		background-size: 100vw;
+	}
 }
 
 @mixin appicon($left, $top, $width, $height) {
-  background-position: $left $top;
-  width: $width;
-  height: $height;
+	background-position: $left $top;
+	width: $width;
+	height: $height;
 }

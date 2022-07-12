@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+page {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+	z-index: 1;
+}
+
+// ----------------------------------------------------------有tab-bar的页面需要预留底部距离
+.tab_bar {
+	box-sizing: border-box;
+	padding-bottom: 15.3846vw;
+}
+
+// ----------------------------------------------------------通用的搜索框
+.common_search {
+	width: 100%;
+	height: 9.2308vw;
+	background-color: rgba($color: #ffffff, $alpha: 0.5);
+	border-radius: 9.2308vw;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 3.8462vw;
+	> .searchInp {
+		height: 100%;
+		flex: 1;
+		box-sizing: border-box;
+		padding: 0 2.5641vw;
+		border: none;
+		font-size: 4.1026vw;
+		color: #ffffff;
+	}
+    input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #ea0d0d;
+    }
+    input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #ea0d0d;
+    }
+    input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #ea0d0d;
+        opacity: 1;
+    }
+    input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #ea0d0d;
+        opacity: 1;
+    }
+}

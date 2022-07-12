@@ -4,6 +4,10 @@ import App from './App'
 import Vue from 'vue'
 
 import store from '@/store/index.js'
+// 格式化时间
+import dayjs from 'dayjs'
+// 序列化对象
+import qs from 'qs'
 
 // H5调用地图API
 import {
@@ -16,6 +20,8 @@ import {
 	http
 } from '@/static/units/http.js'
 Vue.prototype.$http = http;
+Vue.prototype.$dayjs = dayjs;
+Vue.prototype.$qs = qs;
 
 Vue.config.productionTip = false
 App.mpType = 'app'

@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+page {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+	z-index: 1;
+}
+
+// ----------------------------------------------------------有tab-bar的页面需要预留底部距离
+.tab_bar {
+	box-sizing: border-box;
+	padding-bottom: 15.3846vw;
+}
+
+// ----------------------------------------------------------通用的搜索框
+.common_search {
+	width: 100%;
+	height: 9.2308vw;
+	background-color: rgba($color: #ffffff, $alpha: 0.5);
+	border-radius: 9.2308vw;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 3.8462vw;
+	position: sticky;
+	top: 0;
+	> .searchInp {
+		height: 100%;
+		flex: 1;
+		box-sizing: border-box;
+		padding: 0 2.5641vw;
+		border: none;
+		font-size: 4.1026vw;
+		color: #ffffff;
+	}
+}
+// ----------------------------------------------------------白色卡片
+.pic_card {
+  border-radius: 1.2821vw;
+  background-color: #ffffff;
+  box-shadow: 0vw 0.7692vw 0.7692vw rgba(0, 0, 0, 0.08);
+}
+.titleCnt_card {
+  width: 100%;
+  box-sizing: border-box;
+  padding:3.8462vw 0;
+}
+// ----------------------------------------------------------图标N宫格
+.iconFlex_card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .list {
+    text-align: center;
+    margin-top: 5.1282vw;
+    font-size: 0;
+    > .chunk {
+      display: inline-block;
+      max-width: 100%;
+      position: relative;
+    }
+    .layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 14.8718vw;
+      position: relative;
+      .img_or_icon {
+        height: 9.2308vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mark {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+      }
+    }
+    .text {
+      line-height: 5.1282vw;
+      font-size: 3.5897vw;
+      color: #282828;
+    }
+  }
+}
+// ----------------------------------------------------------文字列表的标题栏
+.card_title {
+    box-sizing: border-box;
+    padding: 0 3.8462vw;
+    margin-bottom: 3.8462vw;
+    display: flex;
+    justify-content: space-between;
+    .only {
+      line-height: 5.1282vw;
+      font-size: 3.5897vw;
+      color: #282828;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      line-height: 8.4615vw;
+      > .text {
+        background: linear-gradient(#f9ea0b, #fb9451);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 6.4103vw;
+        font-weight: bold;
+      }
+      > .line {
+        width: 0.3846vw;
+        height: 5.1282vw;
+        background-color: #9b9b9b;
+        margin: 0 2.5641vw;
+      }
+      > span {
+        font-size: 3.0769vw;
+        color: #9b9b9b;
+      }
+    }
+    .countdown {
+      display: flex;
+      align-items: center;
+      > .text {
+        color: #282828;
+        font-size: 3.5897vw;
+        font-weight: bold;
+        line-height: 5.1282vw;
+        margin-right: 3.0769vw;
+      }
+      > .time_icon {
+        position: relative;
+        border: 0.2564vw solid #d0021b;
+        height: 4.1026vw;
+        width: 23.0769vw;
+        border-radius: 4.1026vw;
+        box-sizing: border-box;
+        padding-left: 8.7179vw;
+        font-size: 2.5641vw;
+        color: #d0021b;
+        display: flex;
+        align-items: center;
+        [class^="myicon-"] {
+          position: absolute;
+          top: -0.7692vw;
+          left: -0.5128vw;
+        }
+      }
+    }
+    .more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9b9b9b;
+      line-height: 5.1282vw;
+      .iconfont {
+        font-size: 3.8462vw;
+      }
+    }
+  }
+  // ----------------------------------------------------------文字图片列表
+  .text_img_lists {
+    width: 100%;
+    .list {
+      display: block;
+      margin-top: 3.8462vw;
+      &:first-child {
+        margin-top: 0;
+      }
+      > .imgs_top {
+        width: 100%;
+        margin-bottom: 3.0769vw;
+      }
+      > .text_oneImg {
+        display: flex;
+        justify-content: space-between;
+        > .view_text {
+          flex: 1;
+          width: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          > .view_title {
+            font-size: 3.5897vw;
+            color: #282828;
+            line-height: 5.641vw;
+            @include overmore(2);
+          }
+          > .view_tips {
+            font-size: 3.0769vw;
+            color: #9b9b9b;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2.5641vw;
+            .redText {
+              color: #d0021b;
+            }
+            .text_mark {
+              display: flex;
+              align-items: center;
+              > span:nth-child(n + 2) {
+                margin-left: 2.5641vw;
+              }
+            }
+            .text_price {
+              font-size: 4.1026vw;
+              color:#d0021b;
+            }
+            .text_aixin {
+              display: flex;
+              align-items: center;
+              .iconfont {
+                font-size: 5.1282vw;
+                color: #d0021b;
+                margin-left: 2.5641vw;
+              }
+            }
+            .text_location {
+              display: flex;
+              flex-direction: column;
+              line-height: 5.1282vw;
+              .location {
+                display: flex;
+                align-items: center;
+              }
+              .iconfont {
+                font-size: 3.8462vw;
+              }
+            }
+            .icon_delete {
+              font-size: 5.1282vw;
+              color: #9b9b9b;
+              height: 5.1282vw;
+              width: 5.1282vw;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        > .view_oneImg {
+          margin-left: 1.2821vw;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .features_agricultural {
+    display: flex;
+    flex-wrap: wrap;
+    > .list {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      border-bottom: 0.2564vw solid map-get($colors, "gray_f6");
+      border-right: 0.2564vw solid map-get($colors, "gray_f6");
+      box-sizing: border-box;
+      padding: 2.5641vw;
+      &:nth-last-child(1),
+      &:nth-child(odd):nth-last-child(2) {
+        border-bottom: 0.0625rem solid map-get($colors, "white");
+      }
+      &:nth-child(even) {
+        border-right: 0.0625rem solid map-get($colors, "white");
+      }
+      .div_img {
+        width: 100%;
+        height: 30.7692vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .price_title_tips {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+      }
+      .title {
+        font-size: 4.1026vw;
+        color: map-get($colors, "black_28");
+        margin-top: 2.5641vw;
+        line-height: 5.641vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+      }
+      .tips {
+        font-size: 3.0769vw;
+        &.font_red {
+          color: map-get($colors, "red_D0");
+        }
+        &.font_blue {
+          color: map-get($colors, "blue_00");
+        }
+      }
+      .price_weight {
+        margin-top: 2.5641vw;
+        display: flex;
+        align-items: flex-end;
+        .price {
+          font-size: 4.1026vw;
+          color: map-get($colors, "red_D0");
+        }
+        .line {
+          font-size: 4.1026vw;
+          color: map-get($colors, "gray_9B");
+        }
+        .weight {
+          font-size: 3.0769vw;
+          color: map-get($colors, "gray_9B");
+        }
+      }
+    }
+  }
+  // 底线
+  .dead_line {
+    font-size: 3.0769vw;
+    color: #9b9b9b;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5.1282vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mui-spinner {
+      margin-right: 2.5641vw;
+      width: 6.1538vw;
+      height: 6.1538vw;
+    }
+  }

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------首页
+.index_content {
+    position: relative;
+    background-color: red;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        width: 120%;
+        height: 72.0513vw;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-image: linear-gradient(to bottom right, #27D5FF 0%, #0091FF 95%, #0091FF 100%);
+        z-index: -1;
+    }
+
+    .index_search {
+        box-sizing: border-box;
+        padding: 3.5897vw 3.8462vw;
+    }
+}
+// 定位点与时间
+.position_time {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3.8462vw 0 5.1282vw;
+    font-size: 4.6154vw;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    .line {
+      width: 0.5128vw;
+      height: 3.8462vw;
+      background-color: #ffffff;
+      margin: 0 2.5641vw;
+    }
+    .iconfont {
+      font-size: 6.4103vw;
+      font-weight: normal;
+      margin-left: 2.5641vw;
+      color: #ffffff;
+    }
+  }

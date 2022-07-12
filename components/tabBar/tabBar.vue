@@ -76,6 +76,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
   height: 15.3846vw;
   background: white;
   display: flex;
@@ -84,6 +85,7 @@ export default {
   box-sizing: border-box;
   border-top: 0.2564vw solid #f6f6f6;
   z-index: 2;
+  overflow: hidden;
 
   .tab-bar-item {
     text-align: center;

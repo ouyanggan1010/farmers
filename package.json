@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "vue-jsonp": "^2.0.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.3",
+    "qs": "^6.11.0"
   }
 }

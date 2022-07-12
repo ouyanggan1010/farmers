@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------首页
+.index_content {
+    position: relative;
+    background-color: red;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        width: 120%;
+        height: 72.0513vw;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-image: linear-gradient(to bottom right, #27D5FF 0%, #0091FF 95%, #0091FF 100%);
+        z-index: -1;
+    }
+
+    .index_search {
+        box-sizing: border-box;
+        padding: 3.5897vw 3.8462vw;
+    }
+}
